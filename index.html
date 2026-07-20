@@ -16,11 +16,10 @@
 
 <!--
   ══════════════════════════════════════════════════════════
-  ▍給 Ivan 的「之後要換」清單（用 Cmd+F 搜尋這些關鍵字）：
+  ▍給 Ivan 的清單（用 Cmd+F 搜尋這些關鍵字）：
   1. LINE 連結已於 2026-07-20 換好（pse.is 短網址，會轉到你的 LINE）✔
-  2. 搜尋「REPLACE_VIDEO」→ 影片好了之後，照旁邊的說明換成 YouTube
-  3. 搜尋「影片上線後」  → 影片換好後，把兩句過渡文案改回正式版
-  4. 搜尋「OPTIONAL」   → 見證區、社群連結，有真實素材後再打開
+  2. 影片已於 2026-07-20 嵌入 ✔ 之後要換影片：搜尋「youtube.com/embed/」，換掉後面那串代碼
+  3. 搜尋「OPTIONAL」→ 見證區、社群連結，有真實素材後再打開
   詳細步驟看同資料夾的「使用說明.md」
   ══════════════════════════════════════════════════════════
 -->
@@ -282,27 +281,18 @@
 <section class="video-sec">
   <div class="wrap">
     <div class="video-frame">
-      <!--
-        ▍REPLACE_VIDEO：影片好了之後怎麼換？
-        1. 把下面整個 <div class="video-inner"> ... </div> 的「裡面」清空
-        2. 貼上這一行（把 XXXXXXXX 換成你的 YouTube 影片代碼）：
-        <iframe src="https://www.youtube.com/embed/XXXXXXXX" title="教學影片" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-        （YouTube 影片代碼 = 網址 watch?v= 後面那一串英數字）
-      -->
+      <!-- 之後要換影片：把下面 embed/ 後面那串代碼換成新影片的代碼就好
+           （影片代碼 = YouTube 網址 watch?v= 後面那一串英數字） -->
       <div class="video-inner">
-        <div class="play-badge" aria-hidden="true"></div>
-        <div class="vtitle">《泰國買房免費教學影片》</div>
-        <!-- 影片上線後，把下面這行改回：一對一線上諮詢，完全免費，不會強迫推銷 -->
-        <div class="vnote">影片近期上線｜先加 LINE，上線後我第一時間通知你</div>
+        <iframe src="https://www.youtube.com/embed/0JK4IGogVNg" title="泰國買房教學影片" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
       </div>
     </div>
     <div class="cta-box">
-      <!-- 影片上線後，把按鈕文字改回：看完影片？加 LINE 預約免費諮詢 -->
       <a class="btn-line" href="https://pse.is/88q2we" target="_blank" rel="noopener">
         <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.5C6.5 2.5 2 6.2 2 10.7c0 4 3.4 7.4 8 8.1.3.1.7.2.8.5.1.2.1.6 0 .9l-.1.8c0 .2-.2.9.8.5s5.2-3.1 7.1-5.3c1.3-1.4 1.9-2.9 1.9-4.5 0-4.5-4.5-8.2-10-8.2zM8.1 13.2H6.2c-.3 0-.5-.2-.5-.5V9c0-.3.2-.5.5-.5s.5.2.5.5v3.2h1.4c.3 0 .5.2.5.5s-.2.5-.5.5zm1.9-.5c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9c0-.3.2-.5.5-.5s.5.2.5.5v3.7zm4.5 0c0 .2-.1.4-.3.5h-.2c-.2 0-.3-.1-.4-.2l-1.9-2.6v2.3c0 .3-.2.5-.5.5s-.5-.2-.5-.5V9c0-.2.1-.4.3-.5h.2c.2 0 .3.1.4.2l1.9 2.6V9c0-.3.2-.5.5-.5s.5.2.5.5v3.7zm3.1-2.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.9h1.4c.3 0 .5.2.5.5s-.2.5-.5.5h-1.9c-.3 0-.5-.2-.5-.5V9c0-.3.2-.5.5-.5h1.9c.3 0 .5.2.5.5s-.2.5-.5.5h-1.4v.8h1.4z"/></svg>
-        先加 LINE，預約免費諮詢
+        看完影片？加 LINE 預約免費諮詢
       </a>
-      <p class="cta-note">影片上線後，我會在 LINE 第一時間通知你；諮詢完全免費，不會強迫推銷</p>
+      <p class="cta-note">一對一線上諮詢，完全免費，不會強迫推銷</p>
     </div>
   </div>
 </section>
