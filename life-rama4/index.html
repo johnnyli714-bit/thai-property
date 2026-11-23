@@ -39,7 +39,6 @@
     font-family:"Noto Sans TC",-apple-system,"PingFang TC","Microsoft JhengHei",sans-serif;
     font-size:16px;line-height:1.85;letter-spacing:.03em;
     -webkit-font-smoothing:antialiased;
-    padding-bottom:calc(76px + env(safe-area-inset-bottom));
   }
   img{max-width:100%;display:block;}
   a{color:inherit;}
@@ -165,7 +164,7 @@
   .qr small{display:block;color:#333;font-size:12px;margin-top:4px;}
   @media (min-width:820px){.qr{display:block;}}
 
-  footer{background:var(--dark);color:rgba(238,241,245,.55);font-size:12.5px;padding:0 0 28px;text-align:center;}
+  footer{background:var(--dark);color:rgba(238,241,245,.55);font-size:12.5px;padding:0 0 calc(104px + env(safe-area-inset-bottom));text-align:center;}
   footer .wrap{border-top:1px solid rgba(255,255,255,.1);padding-top:20px;}
 
   /* 手機底部 LINE 按鈕 */
